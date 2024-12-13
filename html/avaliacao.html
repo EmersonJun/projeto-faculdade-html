@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Usuário</title>
+    <link rel="stylesheet" href="../css/review.css">
+</head>
+<body>
+    <header>
+        <h1>Nos Avalie!</h1>
+        <p>Sua opinião é muito importante para nós. Avalie e deixe seu comentário abaixo!</p>
+    </header>
+
+    <main>
+        <div class="review-container">
+            <h2>Avaliação</h2>
+            <!-- Estrelas de Avaliação -->
+            <div class="star-rating">
+                <span data-value="5">&#9733;</span>
+                <span data-value="4">&#9733;</span>
+                <span data-value="3">&#9733;</span>
+                <span data-value="2">&#9733;</span>
+                <span data-value="1">&#9733;</span>
+            </div>
+            <p class="rating-label">Selecione uma avaliação</p>
+
+            <!-- Caixa de Comentário -->
+            <form id="reviewForm">
+                <label for="comment">Deixe seu comentário:</label>
+                <textarea id="comment" name="comment" rows="5" placeholder="Escreva aqui..."></textarea>
+
+                <!-- Botão de Envio -->
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </div>
+
+        <!-- Confirmação após envio -->
+        <div id="thankYouMessage" class="hidden">
+            <h2>Obrigado pela sua avaliação!</h2>
+            <p>Sua opinião ajuda a melhorar nossos serviços.</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="review.js"></script>
+</body>
+</html>

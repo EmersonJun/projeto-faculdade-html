@@ -1,0 +1,197 @@
+/* ghibli5-dark.css */
+
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #333333;
+    background-color: #2a2a2a; /* Fundo escuro */
+}
+
+header img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+nav {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    background-color: #222222;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #444444; /* Fundo de destaque */
+    color: #00bcd4; /* Azul vibrante */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #1e1e1e; /* Fundo escuro para o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: 1px solid #333333; /* Contorno sutil */
+}
+
+/* Parágrafos */
+main p {
+    color: #bbbbbb; /* Texto secundário */
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Palavras-chave destacadas */
+.highlight {
+    color: #ff9800; /* Cor vibrante para destacar palavras-chave */
+    font-weight: bold;
+}
+
+/* Imagens */
+main img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #333333;
+}
+
+/* Títulos Secundários */
+main h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 10px;
+}
+
+/* Link personalizado */
+a img {
+    border: 3px solid #00bcd4;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+    border-color: #ff9800; /* Mudança na cor da borda ao passar o mouse */
+}
+
+/* Custom Section */
+/* Estilo para a custom-section */
+.custom-section {
+    background-color: #1e1e1e; /* Fundo escuro contrastante */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 500px;
+    margin: 20px auto; /* Centralizado na página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    border: 1px solid #333333; /* Contorno sutil */
+    text-align: center; /* Alinhamento centralizado do conteúdo */
+}
+
+.custom-section h2 {
+    font-size: 1.5rem; /* Tamanho de fonte legível */
+    color: #ffffff; /* Texto claro */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    border-bottom: 1px solid #333333; /* Linha separadora abaixo do título */
+    padding-bottom: 10px; /* Espaçamento interno no título */
+}
+
+.custom-section a {
+    display: inline-block; /* Botão inline */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaçamento acima do botão */
+    font-size: 1rem; /* Tamanho do texto */
+    color: #ffffff; /* Texto branco */
+    text-decoration: none; /* Sem sublinhado */
+    background-color: #4682b4; /* Fundo azul minimalista */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave */
+}
+
+.custom-section a:hover {
+    background-color: #3a6e99; /* Azul mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Leve efeito de aumento */
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222222;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    border-top: 1px solid #333333;
+    margin-top: 30px;
+}
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #008c9e;
+}
+
+#search-results {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #00bcd4;
+}

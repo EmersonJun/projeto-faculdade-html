@@ -1,0 +1,132 @@
+/* ghibli-login-dark.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #333333;
+    background-color: #2a2a2a; /* Fundo escuro */
+    width: 100%;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #bbbbbb;
+}
+
+/* Container para o formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Estilo do formulário de login */
+.login-form {
+    background-color: #1e1e1e; /* Fundo escuro para o formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título do formulário */
+.login-form h2 {
+    text-align: center;
+    color: #00bcd4; /* Azul vibrante */
+    margin-bottom: 20px;
+}
+
+/* Estilos dos campos de entrada */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    color: #bbbbbb;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #888888; /* Cor suave para o texto do placeholder */
+}
+
+form input:focus {
+    border-color: #00bcd4;
+    outline: none;
+    background-color: #333333;
+}
+
+/* Estilo do botão */
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0097a7;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2a2a2a;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    border-top: 1px solid #333333;
+    width: 100%;
+    margin-top: 30px;
+}

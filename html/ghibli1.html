@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Ghibli</title>
+    <link rel="stylesheet" href="../css/Carrossel.css">
+    <link rel="stylesheet" href="../css/ghibli1.css">
+
+</head>
+<body>
+    <header>
+        <img src="../img/totolg.jpg" alt="Logo Estúdio Ghibli">
+        <h1>Bem-vindo ao Estúdio Ghibli</h1>
+        <p>Descubra a magia do estúdio mais encantador do mundo da animação</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ghibli2.html">Timeline</a></li>
+            <li><a href="ghibli3.html">Hayao Miyazaki</a></li>
+            <li><a href="ghibli4.html">Informações</a></li>
+            <li><a href="ghibli5.html">importância</a></li>
+        </ul>
+    </nav>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Digite aqui para buscar...">
+        <button id="search-button">Buscar</button>
+    </div>
+    <p id="search-results"></p>        
+
+    <main>
+        <section id="sobre">
+            <h2>Estúdio Ghibli</h2>
+            <p>
+                O Estúdio Ghibli foi fundado em 1985 no Japão e é conhecido por suas animações inesquecíveis que capturam
+                a essência da imaginação e da emoção humana. Sob a liderança de diretores como Hayao Miyazaki, o estúdio 
+                trouxe ao mundo obras-primas como <strong>A Viagem de Chihiro</strong>, <strong>Meu Amigo Totoro</strong>, 
+                e <strong>O Castelo Animado</strong>.
+            </p>
+            <img src="../img/2560x1440px _ free download _ HD wallpaper_ Howl's Moving Castle, Studio Ghibli, fantasy art, clo___.jpg" alt="Imagem de inspiração Ghibli">
+        </section>
+
+        <section id="filmes">
+            <h2>Filmes Mais Icônicos</h2>
+            <p>Entre os filmes mais marcantes do Estúdio Ghibli estão:</p>
+            <table class="iconic-films-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Ano de Lançamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A Viagem de Chihiro</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>Meu Amigo Totoro</td>
+                        <td>1988</td>
+                    </tr>
+                    <tr>
+                        <td>O Castelo Animado</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Princesa Mononoke</td>
+                        <td>1997</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+            <div class="Carrossel-espaço" style="max-width: 1400px;align-items: center;">
+                <div class="Carrossel">
+                    <img src="../img/Totoro2.jpg" alt="totoro" class="Carrossel-imagem">
+                    <img src="../img/chihiro.jpg" alt="chihiro" class="Carrossel-imagem">
+                    <img src="../img/pmononoke.jpg" alt="mononoke" class="Carrossel-imagem">
+                    <img src="../img/casteloanimado.jpg.jpg" alt="casteloanimado" class="Carrossel-imagem">
+                </div>
+                <button class="ultimo" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="proximo" onclick="moveSlide(1)">&#10095;</button>
+                
+        <section id="impacto">
+            <h2>Impacto Cultural</h2>
+            <p>
+                O Estúdio Ghibli não é apenas um estúdio de animação; é uma força cultural. Seus filmes são conhecidos por abordar
+                temas como ecologia, feminismo, amor, e a complexidade das relações humanas, conectando gerações ao redor do mundo.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Estúdio Ghibli Fan Page. Todos os direitos reservados. | <a href="vampeta.html">Contato</a></p>
+    </footer>
+</body>
+</div>
+    <script src="../js/Carrosel.js"></script>
+    <script src="../js/busca.js"></script>
+</html>

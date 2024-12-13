@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
+/* Contêiner de Avaliação */
+.review-container {
+    background-color: #1e1e1e; /* Fundo levemente contrastado */
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.review-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 10px;
+}
+
+/* Estrelas de Avaliação */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #555555; /* Estrelas desativadas */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star-rating span:hover,
+.star-rating span:hover ~ span {
+    color: #ff9800; /* Estrelas destacadas ao passar o mouse */
+}
+
+.star-rating span.selected,
+.star-rating span.selected ~ span {
+    color: #ff9800; /* Estrelas selecionadas */
+}
+
+/* Etiqueta de Avaliação */
+.rating-label {
+    font-size: 1rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    text-align: left;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #121212;
+    color: #e0e0e0;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+form textarea:focus {
+    border-color: #4682b4; /* Cor ao focar */
+    outline: none;
+}
+
+/* Botão de Envio */
+form button {
+    background-color: #4682b4; /* Azul minimalista */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3a6e99; /* Azul escuro ao passar o mouse */
+}
+
+/* Mensagem de Agradecimento */
+.hidden {
+    display: none;
+}
+
+#thankYouMessage {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#thankYouMessage h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #00bcd4; /* Azul vibrante */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    border-top: 1px solid #333333;
+    padding-top: 15px;
+}
